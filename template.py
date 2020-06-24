@@ -1,0 +1,15 @@
+html = """
+<html>
+    <body>
+        <form action="">
+            First number = <input type = "number" name = "first_num"
+> <br><br>
+            Second number = <input type = "number" name = "second_num"
+>
+             <input type="submit">
+        </form>
+        Sum of two number = %(sum)d <br><br>
+        Multi of two number = %(mul)d
+    <body>
+</html>
+"""
