@@ -8,8 +8,8 @@ html = """
 >
              <input type="submit">
         </form>
-        Sum of two number = %(sum)d <br><br>
-        Multi of two number = %(mul)d
+        Sum of two number = %(sum)s <br><br>
+        Multi of two number = %(mul)s
     <body>
 </html>
 """
