@@ -11,7 +11,7 @@ def application(environ, start_response):
     try:
         
         if first_num.isdigit() == False or second_num.isdigit() == False:
-            raise e.MyError("You can't input string")
+            raise e.StrError("You can't input string")
 
         if '' not in [first_num, second_num]:
             first_num, second_num = int(first_num) , int(second_num)
@@ -21,9 +21,11 @@ def application(environ, start_response):
             sum = "Please input"
             mul = "number"
             sum, mul = str(sum), str(mul)
-    except e.MyError:
-        sum = e.MyError
-    
+    except e.StrError:
+        sum = e.StrError
+        mul = ''
+        sum = str(sum)
+        mul = str(mul)
     
     response_body = html % {'sum':sum , 'mul':mul}
     start_response('200 OK', [
