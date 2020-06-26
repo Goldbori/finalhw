@@ -10,6 +10,7 @@ html = """
         </form>
         Sum of two number = %(sum)s <br><br>
         Multi of two number = %(mul)s
+        Error Message = %(msg)s
     <body>
 </html>
 """
