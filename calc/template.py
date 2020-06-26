@@ -9,7 +9,7 @@ html = """
              <input type="submit">
         </form>
         Sum of two number = %(sum)s <br><br>
-        Multi of two number = %(mul)s
+        Multi of two number = %(mul)s <br><br>
         Error Message = %(msg)s
     <body>
 </html>
