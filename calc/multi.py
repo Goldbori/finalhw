@@ -38,7 +38,11 @@ def application(environ, start_response):
         
         if first_num.isdigit() == False or second_num.isdigit() == False:
             
+<<<<<<< HEAD
             sum,mul,msg="X","X","You can't input string"
+=======
+            sum,mul,msg="","","You can't input string"
+>>>>>>> 5b471d2ed40e767c43a74e39606e7819a9246335
             
         else: 
                 
