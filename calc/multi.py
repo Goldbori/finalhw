@@ -31,17 +31,15 @@ def application(environ, start_response):
             first_num, second_num = int(first_num) , int(second_num)
             sum = first_num + second_num
             mul = first_num * second_num
-        
+            msg = "X"        
     elif '' in [first_num, second_num]:
         first_num = blank(first_num)
         second_num = blank(second_num)
         
         if first_num.isdigit() == False or second_num.isdigit() == False:
             
-<<<<<<< HEAD
 
             sum,mul,msg="X","X","You can't input string"
-=======
             
         else: 
                 
